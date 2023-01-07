@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (min-width: 500px) {
+  body {
+    width: 1440px;
+    height: 800px;
+  }
+
+  main {
+    position: absolute;
+    width: 920px;
+    height: 500px;
+    left: 260px;
+    top: 171px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .sedans {
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .luxury {
+    border-radius: 0px 8px 8px 0px;
+  }
+}
+
+.sedans {
+  background: #e28625;
+}
+
+.sedans button {
+  color: #e28625;
+  margin-bottom: 48px;
+}
+
+.luxury {
+  background: #004140;
+}
+
+.luxury button {
+  color: #004140;
+}
+
+.suvs {
+  background: #006971;
+}
+
+.suvs button {
+  color: #006971;
+}
+
+img {
+  margin-top: 48px;
+  margin-left: 48px;
+  margin-bottom: 35px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  margin-left: 48px;
+}
+
+p {
+  margin-left: 48px;
+  margin-bottom: 83px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  width: 212px;
+  height: 125px;
+}
+
+button {
+  margin-left: 48px;
+  margin-bottom: 48px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #004140;
+  border: 2px solid transparent;
+  border-radius: 9px;
+  width: 146px;
+  max-width: 146px;
+  height: 48px;
+}
+
+button:hover {
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .sedans {
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  main .luxury {
+    border-radius: 0px 0px 8px 8px;
+  }
+}
